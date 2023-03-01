@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #1f242d; 
+}
+
+body{
+    background: #1f242d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    border: 1px solid;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;  
+    background: #fff;
+    border-radius: 28px;
+}
+
+.search-box input{
+    width: 250px;
+    background: none;
+    border: 0;
+    padding: 5px;
+    outline: none;
+    font-size: 18px;
+}
+
+.search-box button{
+    border: none;
+    cursor: pointer;
+    background: #2b3038;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.search-box button:hover{
+    background: rgb(63, 67, 71);
+}
+
+.search-box{
+    position: relative;
+}
+
+.label{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 36%;
+    white-space: nowrap;
+    display: none;
+}
+
+.label-active{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 36%;
+    white-space: nowrap;
+    font-size: 18px;
+}
+
+.humidity, .wind{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.humidity i, .wind i{
+    font-size: 33px ;
+    margin-right: 8px;
+}
+
+.weather-info{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.wetaherImage{
+    width: 250px;
+    padding-bottom: 15px;
+    padding-top: 20px;
+}
+
+.weather-description{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.text span{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.text p{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.image-box  {
+    display: flex;
+    justify-content: center;
+}
+
+.error{
+    text-align: center;
+}
+
+.error h1{
+    font-size: 25px;
+}
+
+.error-image-box{
+    display: flex;
+    justify-content: center;
+}
+
+.wetaherError{
+    width: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
